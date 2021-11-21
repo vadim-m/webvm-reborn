@@ -56,85 +56,13 @@
   <!-- CONTENT -->
   <div class="wrapper">
 
-    <!-- about -->
-    <section class="section about">
-      <div class="about__container container">
-        <div class="about__list">
-
-          <div class="about__item">
-            <div class="about__inner">
-              <div class="about__photo">
-                <img src="./themes/web-vm/assets/images/about/design.jpg" alt="about__pic" class="about__pic">
-              </div>
-              <a href="https://codepen.io/VadimM" target="_blank" class="about__text about__text_codepen">
-                CSS Заметки
-              </a>
-            </div>
-          </div>
-
-          <div class="about__item">
-            <div class="about__inner">
-              <div class="about__photo">
-                <img src="./themes/web-vm/assets/images/about/code.jpg" alt="about__pic" class="about__pic">
-              </div>
-              <a href="https://jsfiddle.net/user/Vadim_MM/fiddles/" target="_blank"
-                class="about__text about__text_jsfiddle">JS Задачи
-              </a>
-            </div>
-          </div>
-
-          <div class="about__item">
-            <div class="about__inner">
-              <div class="about__photo">
-                <img src="./themes/web-vm/assets/images/about/git.jpg" alt="about__pic" class="about__pic">
-              </div>
-              <a href="https://github.com/vadim-m" target="_blank" class="about__text about__text_github">Github Проекты
-              </a>
-            </div>
-          </div>
-          <div class="about__item about__item_big">
-            <div class="about__social social">
-              <!-- <a href="https://github.com/vadim-m" target="_blank" class="social__item">
-                <i class="fab fa-github-alt"></i> -->
-              </a>
-              <a href="https://vk.com/vad32" target="_blank" class="social__item">
-                <i class="fab fa-vk"></i>
-              </a>
-              <a href="https://t.me/Vadim_MM" target="_blank" class="social__item">
-                <i class="fab fa-telegram-plane"></i>
-              </a>
-              <a href="mailto:vmonastyrskiy@yandex.ru" target="_blank" class="social__item">
-                <i class="far fa-envelope"></i>
-              </a>
-            </div>
-            <div class="about__info">
-              <h3 class="about__title">Об проекте web-vm.ru</h3>
-              <div class="about__desc">
-                <p>Приветствую всех на моем сайте!</p>
-
-                <p>Я начинающий web-разработчик, специализируюсь в большей степени на front-end разработке, но также
-                  интересуюсь основами back-end`а. Данный проект решил создать, чтобы вести личные заметки в свободной
-                  форме по различным темам веба: HTML, CSS, JS, Vue, Git, Webpack, PHP, MySQL, Linux и тд.</p>
-
-                <p>По возможности буду публиковать ссылки на сторонние бесплатные ресурсы и материалы. Также возможны
-                  записи про установку различных утилит в ОС Ubuntu Linux, пользуюсь которой в качестве основной системы
-                  уже более семи лет.</p>
-              </div>
-              <div class="about__author">Вадим Монастырский</div>
-              <div class="about__email">vmonastyrskiy@yandex.ru</div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- САМ КОНТЕНТ СТРАНИЦЫ (список записей блога) -->
     <!-- blog -->
     <section class="section section--blog" id='blog'>
+
       <div class="container">
 
+        <!-- Форма поиска -->
         <form class="form-inline" method="GET" action="https://web-vm.site/search">
           <input type="text" name="search" class="form-control">
 
@@ -148,34 +76,26 @@
         <div class="blog">
           <!-- начало цикла отрисовки поста блога -->
           <div class="blog__item">
-            <div class="blog__wrapper">
 
+            <div class="blog__wrapper">
               <div class="blog__header">
                 <a class="blog__link" href="https://web-vm.site/post/osnovy-http-2">
-                  <img src="https://web-vm.site/storage/app/uploads/public/603/e38/79b/603e3879b9778543166583.jpeg"
+                  <img
+                    src="https://images.wallpaperscraft.ru/image/single/harleydavidson_mototsikl_bajk_226052_1600x900.jpg"
                     alt="ОСНОВЫ HTTP #2" class="blog__photo">
                 </a>
-
               </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/osnovy-http-2" class="blog__title-link">ОСНОВЫ HTTP #2</a>
-                </div>
-                <div class="blog__text">
-                  Вторая часть по основам протокола передачи данных HTTP.
-                </div>
-              </div>
-
             </div>
-
+            <div class="blog__title">
+              <a href="https://web-vm.site/post/osnovy-http-2" class="blog__title-link">ОСНОВЫ HTTP #2</a>
+            </div>
+            <div class="blog__text">
+              Вторая часть по основам протокола передачи данных HTTP.
+            </div>
             <div class="blog__footer">
               <div class="blog__tags post__tags">
-
                 <i class="fas fa-tags blog__tags-icon"></i>
-
                 <span class="tags__http tag">#http</span>
-
-
               </div>
 
               <time datetime="10-02-2021 15:30" class="blog__date">
@@ -189,37 +109,27 @@
           </div>
           <!-- начало цикла отрисовки поста блога -->
           <div class="blog__item">
+
             <div class="blog__wrapper">
-
               <div class="blog__header">
-                <a class="blog__link" href="https://web-vm.site/post/markdown">
-                  <img src="https://web-vm.site/storage/app/uploads/public/600/744/b63/600744b634131570044338.webp"
-                    alt="Markdown" class="blog__photo">
+                <a class="blog__link" href="https://web-vm.site/post/osnovy-http-2">
+                  <img
+                    src="https://images.wallpaperscraft.ru/image/single/harleydavidson_mototsikl_bajk_226052_1600x900.jpg"
+                    alt="ОСНОВЫ HTTP #2" class="blog__photo">
                 </a>
-
               </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/markdown" class="blog__title-link">Markdown</a>
-                </div>
-                <div class="blog__text">
-                  Небольшая шпаргалка по основному синтаксису языка Markdown.
-                </div>
-              </div>
-
             </div>
-
+            <div class="blog__title">
+              <a href="https://web-vm.site/post/markdown" class="blog__title-link">Markdown</a>
+            </div>
+            <div class="blog__text">
+              Небольшая шпаргалка по основному синтаксису языка Markdown.
+            </div>
             <div class="blog__footer">
               <div class="blog__tags post__tags">
-
                 <i class="fas fa-tags blog__tags-icon"></i>
-
                 <span class="tags__markdown tag">#markdown</span>
-
-
                 <span class="tags__markup tag">#markup</span>
-
-
               </div>
 
               <time datetime="02-02-2021 23:00" class="blog__date">
@@ -233,36 +143,28 @@
           </div>
           <!-- начало цикла отрисовки поста блога -->
           <div class="blog__item">
-            <div class="blog__wrapper">
 
+            <div class="blog__wrapper">
               <div class="blog__header">
                 <a class="blog__link" href="https://web-vm.site/post/pravilnye-imena-peremennyh">
-                  <img src="https://web-vm.site/storage/app/uploads/public/603/e3c/63e/603e3c63edd48219046112.jpg"
+                  <img
+                    src="https://images.wallpaperscraft.ru/image/single/harleydavidson_mototsikl_bajk_226052_1600x900.jpg"
                     alt="Правильные имена переменных" class="blog__photo">
                 </a>
-
               </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/pravilnye-imena-peremennyh" class="blog__title-link">Правильные
-                    имена переменных</a>
-                </div>
-                <div class="blog__text">
-                  Придумать правильные имена переменных, констант и функций бывает очень трудно, но грамотно выбранное
-                  имя намного облегчает чтение кода.
-                </div>
-              </div>
-
             </div>
-
+            <div class="blog__title">
+              <a href="https://web-vm.site/post/pravilnye-imena-peremennyh" class="blog__title-link">Правильные
+                имена переменных</a>
+            </div>
+            <div class="blog__text">
+              Придумать правильные имена переменных, констант и функций бывает очень трудно, но грамотно выбранное
+              имя намного облегчает чтение кода.
+            </div>
             <div class="blog__footer">
               <div class="blog__tags post__tags">
-
                 <i class="fas fa-tags blog__tags-icon"></i>
-
                 <span class="tags__basics tag">#basics</span>
-
-
               </div>
 
               <time datetime="26-01-2021 18:30" class="blog__date">
@@ -276,35 +178,26 @@
           </div>
           <!-- начало цикла отрисовки поста блога -->
           <div class="blog__item">
-            <div class="blog__wrapper">
 
+            <div class="blog__wrapper">
               <div class="blog__header">
                 <a class="blog__link" href="https://web-vm.site/post/tipy-dannyh-v-javascript">
-                  <img src="https://web-vm.site/storage/app/uploads/public/600/5ef/3f5/6005ef3f5acef268266142.jpg"
+                  <img src="https://images.wallpaperscraft.ru/image/single/gory_siluety_oblaka_226032_1600x900.jpg"
                     alt="Типы данных в Javascript" class="blog__photo">
                 </a>
-
               </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/tipy-dannyh-v-javascript" class="blog__title-link">Типы данных в
-                    Javascript</a>
-                </div>
-                <div class="blog__text">
-                  Типы данных в JavaScript можно разделить на две категории: простые типы (примитивы) и объекты.
-                </div>
-              </div>
-
             </div>
-
+            <div class="blog__title">
+              <a href="https://web-vm.site/post/tipy-dannyh-v-javascript" class="blog__title-link">Типы данных в
+                Javascript</a>
+            </div>
+            <div class="blog__text">
+              Типы данных в JavaScript можно разделить на две категории: простые типы (примитивы) и объекты.
+            </div>
             <div class="blog__footer">
               <div class="blog__tags post__tags">
-
                 <i class="fas fa-tags blog__tags-icon"></i>
-
                 <span class="tags__js tag">#js</span>
-
-
               </div>
 
               <time datetime="13-01-2021 12:30" class="blog__date">
@@ -318,34 +211,25 @@
           </div>
           <!-- начало цикла отрисовки поста блога -->
           <div class="blog__item">
-            <div class="blog__wrapper">
 
+            <div class="blog__wrapper">
               <div class="blog__header">
                 <a class="blog__link" href="https://web-vm.site/post/osnovy-http-1">
-                  <img src="https://web-vm.site/storage/app/uploads/public/603/e37/730/603e377307cd2717603361.jpeg"
+                  <img src="https://images.wallpaperscraft.ru/image/single/gory_derevia_tuman_226051_1600x900.jpg"
                     alt="Основы HTTP #1" class="blog__photo">
                 </a>
-
               </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/osnovy-http-1" class="blog__title-link">Основы HTTP #1</a>
-                </div>
-                <div class="blog__text">
-                  Первая часть по основам протокола передачи данных HTTP.
-                </div>
-              </div>
-
             </div>
-
+            <div class="blog__title">
+              <a href="https://web-vm.site/post/osnovy-http-1" class="blog__title-link">Основы HTTP #1</a>
+            </div>
+            <div class="blog__text">
+              Первая часть по основам протокола передачи данных HTTP.
+            </div>
             <div class="blog__footer">
               <div class="blog__tags post__tags">
-
                 <i class="fas fa-tags blog__tags-icon"></i>
-
                 <span class="tags__http tag">#http</span>
-
-
               </div>
 
               <time datetime="09-01-2021 22:15" class="blog__date">
@@ -357,174 +241,7 @@
             </div>
 
           </div>
-          <!-- начало цикла отрисовки поста блога -->
-          <div class="blog__item">
-            <div class="blog__wrapper">
 
-              <div class="blog__header">
-                <a class="blog__link" href="https://web-vm.site/post/zagruzka-shriftov-s-google-fonts">
-                  <img src="https://web-vm.site/storage/app/uploads/public/5fe/481/6e5/5fe4816e512a7639573647.webp"
-                    alt="Загрузка шрифтов с Google Fonts" class="blog__photo">
-                </a>
-
-              </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/zagruzka-shriftov-s-google-fonts" class="blog__title-link">Загрузка
-                    шрифтов с Google Fonts</a>
-                </div>
-                <div class="blog__text">
-                  Инструкция по загрузке Google шрифтов и простому добавлению их на сайт при помощи
-                  google-webfonts-helper.
-                </div>
-              </div>
-
-            </div>
-
-            <div class="blog__footer">
-              <div class="blog__tags post__tags">
-
-                <i class="fas fa-tags blog__tags-icon"></i>
-
-                <span class="tags__fonts tag">#fonts</span>
-
-
-              </div>
-
-              <time datetime="30-12-2020 14:00" class="blog__date">
-                <i class="far fa-clock blog__date-icon"></i>
-                <span class="blog__date-day">30/</span>
-                <span class="blog__date-month">12/</span>
-                <span class="blog__date-year">2020</span>
-              </time>
-            </div>
-
-          </div>
-          <!-- начало цикла отрисовки поста блога -->
-          <div class="blog__item">
-            <div class="blog__wrapper">
-
-              <div class="blog__header">
-                <a class="blog__link" href="https://web-vm.site/post/zametki-po-sajtu">
-                  <img src="https://web-vm.site/storage/app/uploads/public/603/e3e/24a/603e3e24a0503475184039.webp"
-                    alt="Заметки по сайту" class="blog__photo">
-                </a>
-
-              </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/zametki-po-sajtu" class="blog__title-link">Заметки по сайту</a>
-                </div>
-                <div class="blog__text">
-                  Список технических характеристик для сайта на память.
-                </div>
-              </div>
-
-            </div>
-
-            <div class="blog__footer">
-              <div class="blog__tags post__tags">
-
-                <i class="fas fa-tags blog__tags-icon"></i>
-
-                <span class="tags__config tag">#config</span>
-
-
-              </div>
-
-              <time datetime="23-12-2020 11:50" class="blog__date">
-                <i class="far fa-clock blog__date-icon"></i>
-                <span class="blog__date-day">23/</span>
-                <span class="blog__date-month">12/</span>
-                <span class="blog__date-year">2020</span>
-              </time>
-            </div>
-
-          </div>
-          <!-- начало цикла отрисовки поста блога -->
-          <div class="blog__item">
-            <div class="blog__wrapper">
-
-              <div class="blog__header">
-                <a class="blog__link" href="https://web-vm.site/post/zagruzka-sajta-pri-pomoshchi-utility-gnu-wget">
-                  <img src="https://web-vm.site/storage/app/uploads/public/603/e2f/14a/603e2f14a1d61579106914.webp"
-                    alt="Загрузка сайта при помощи GNU Wget" class="blog__photo">
-                </a>
-
-              </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/zagruzka-sajta-pri-pomoshchi-utility-gnu-wget"
-                    class="blog__title-link">Загрузка сайта при помощи GNU Wget</a>
-                </div>
-                <div class="blog__text">
-                  Инструкция по загрузке всего сайта целиком (с картинками, скриптами, CSS и шрифтами) при помощи
-                  консольной утилиты GNU Wget.
-                </div>
-              </div>
-
-            </div>
-
-            <div class="blog__footer">
-              <div class="blog__tags post__tags">
-
-                <i class="fas fa-tags blog__tags-icon"></i>
-
-                <span class="tags__linux tag">#linux</span>
-
-
-              </div>
-
-              <time datetime="10-12-2020 21:30" class="blog__date">
-                <i class="far fa-clock blog__date-icon"></i>
-                <span class="blog__date-day">10/</span>
-                <span class="blog__date-month">12/</span>
-                <span class="blog__date-year">2020</span>
-              </time>
-            </div>
-
-          </div>
-          <!-- начало цикла отрисовки поста блога -->
-          <div class="blog__item">
-            <div class="blog__wrapper">
-
-              <div class="blog__header">
-                <a class="blog__link" href="https://web-vm.site/post/glossary">
-                  <img src="https://web-vm.site/storage/app/uploads/public/603/e44/94a/603e4494a198d639672037.webp"
-                    alt="Cловарь web-терминов" class="blog__photo">
-                </a>
-
-              </div>
-              <div class="blog__content">
-                <div class="blog__title">
-                  <a href="https://web-vm.site/post/glossary" class="blog__title-link">Cловарь web-терминов</a>
-                </div>
-                <div class="blog__text">
-                  Небольшой словарь технических терминов на русском и английском языке.
-                </div>
-              </div>
-
-            </div>
-
-            <div class="blog__footer">
-              <div class="blog__tags post__tags">
-
-                <i class="fas fa-tags blog__tags-icon"></i>
-
-                <span class="tags__glossary tag">#glossary</span>
-
-
-              </div>
-
-              <time datetime="01-12-2020 20:59" class="blog__date">
-                <i class="far fa-clock blog__date-icon"></i>
-                <span class="blog__date-day">01/</span>
-                <span class="blog__date-month">12/</span>
-                <span class="blog__date-year">2020</span>
-              </time>
-            </div>
-
-          </div>
           <!-- конец цикла отрисовки поста блога -->
 
         </div>
@@ -643,6 +360,83 @@
 
       </div>
     </section>
+
+
+    <!-- about -->
+    <section class="section about">
+      <div class="about__container container">
+        <div class="about__list">
+
+          <div class="about__item">
+            <div class="about__inner">
+              <div class="about__photo">
+                <img src="./themes/web-vm/assets/images/about/design.jpg" alt="about__pic" class="about__pic">
+              </div>
+              <a href="https://codepen.io/VadimM" target="_blank" class="about__text about__text_codepen">
+                CSS Заметки
+              </a>
+            </div>
+          </div>
+
+          <div class="about__item">
+            <div class="about__inner">
+              <div class="about__photo">
+                <img src="./themes/web-vm/assets/images/about/code.jpg" alt="about__pic" class="about__pic">
+              </div>
+              <a href="https://jsfiddle.net/user/Vadim_MM/fiddles/" target="_blank"
+                class="about__text about__text_jsfiddle">JS Задачи
+              </a>
+            </div>
+          </div>
+
+          <div class="about__item">
+            <div class="about__inner">
+              <div class="about__photo">
+                <img src="./themes/web-vm/assets/images/about/git.jpg" alt="about__pic" class="about__pic">
+              </div>
+              <a href="https://github.com/vadim-m" target="_blank" class="about__text about__text_github">Github Проекты
+              </a>
+            </div>
+          </div>
+          <div class="about__item about__item_big">
+            <div class="about__social social">
+              <!-- <a href="https://github.com/vadim-m" target="_blank" class="social__item">
+                <i class="fab fa-github-alt"></i> -->
+              </a>
+              <a href="https://vk.com/vad32" target="_blank" class="social__item">
+                <i class="fab fa-vk"></i>
+              </a>
+              <a href="https://t.me/Vadim_MM" target="_blank" class="social__item">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a href="mailto:vmonastyrskiy@yandex.ru" target="_blank" class="social__item">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+            <div class="about__info">
+              <h3 class="about__title">Об проекте web-vm.ru</h3>
+              <div class="about__desc">
+                <p>Приветствую всех на моем сайте!</p>
+
+                <p>Я начинающий web-разработчик, специализируюсь в большей степени на front-end разработке, но также
+                  интересуюсь основами back-end`а. Данный проект решил создать, чтобы вести личные заметки в свободной
+                  форме по различным темам веба: HTML, CSS, JS, Vue, Git, Webpack, PHP, MySQL, Linux и тд.</p>
+
+                <p>По возможности буду публиковать ссылки на сторонние бесплатные ресурсы и материалы. Также возможны
+                  записи про установку различных утилит в ОС Ubuntu Linux, пользуюсь которой в качестве основной системы
+                  уже более семи лет.</p>
+              </div>
+              <div class="about__author">Вадим Монастырский</div>
+              <div class="about__email">vmonastyrskiy@yandex.ru</div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- FOOTER-->
     <footer class="footer" id="footer">
