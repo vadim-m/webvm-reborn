@@ -414,6 +414,10 @@ a {
 
 /* ----------------------------------------------------  */
 /* section about */
+.about {
+  margin-bottom: 6rem;
+}
+
 .about__container {
   max-width: 98rem;
   margin: 0 auto;
@@ -466,21 +470,25 @@ a {
 }
 
 .about__item:nth-child(1):hover .about__inner {
-  transform: translate(-20px, -20px);
+  /* transform: translate(-20px, -20px); */
+  transform: translate(20px, -20px);
   background: linear-gradient(
     90deg,
     rgba(116, 67, 255, 1) 25%,
     rgba(63, 189, 163, 1) 100%
   );
+  z-index: 2;
 }
 
 .about__item:nth-child(2):hover .about__inner {
-  transform: translate(0, -20px);
+  /* transform: translate(0, -20px); */
+  transform: translate(20px, -20px);
   background: linear-gradient(
     180deg,
     rgba(116, 67, 255, 1) 10%,
     rgba(63, 189, 163, 1) 100%
   );
+  z-index: 1;
 }
 
 .about__item:nth-child(3):hover .about__inner {
