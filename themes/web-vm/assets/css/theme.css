@@ -817,14 +817,15 @@ a {
 .arrow__up {
   display: none;
   position: fixed;
-  right: 4px;
+  right: ~8px;
   bottom: 100px;
   background-color: transparent;
   cursor: pointer;
 
-  font-size: 45px;
+  font-size: 35px;
   padding: 0;
   border: 0;
+  color: var(--turquoise);
 }
 
 .arrow__up--active {
@@ -832,7 +833,7 @@ a {
 }
 
 .arrow__up::after {
-  content: "Наверх";
+  content: "Up!";
   display: block;
   opacity: 0;
   font-size: 14px;
