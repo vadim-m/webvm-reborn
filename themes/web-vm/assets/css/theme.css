@@ -775,41 +775,25 @@ a {
 
 /* footer */
 .footer {
-  background-color: #2b3a42;
-  border-top: 1px solid #ccc;
+  background-color: var(--white-black);
+  color: var(--text);
 }
 
 .footer__inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-}
-
-.footer__socials {
-  width: 15%;
-  text-align: center;
-}
-
-.footer__socials .social {
-  justify-content: space-between;
-}
-
-.footer__socials .social__item {
-  border-radius: 50%;
-  border: none;
 }
 
 /* copyright */
 .copyright {
   font-size: 14px;
-  color: #fff;
   text-align: center;
-
   padding: 15px 0;
 }
 
 .copyright__link {
-  color: #5299c8;
+  color: var(--purple);
   text-decoration: none;
 }
 
@@ -817,7 +801,7 @@ a {
 .arrow__up {
   display: none;
   position: fixed;
-  right: ~8px;
+  right: 8px;
   bottom: 100px;
   background-color: transparent;
   cursor: pointer;
@@ -825,7 +809,7 @@ a {
   font-size: 35px;
   padding: 0;
   border: 0;
-  color: var(--turquoise);
+  color: var(--purple);
 }
 
 .arrow__up--active {
@@ -1115,15 +1099,6 @@ p.active {
   .header__nav {
     width: 28%;
   }
-
-  /* footer  */
-  .footer__socials {
-    width: 20%;
-  }
-
-  .subscribe__btn {
-    padding: 10px 15px;
-  }
 }
 
 /* @media  max-width: 768px */
@@ -1147,30 +1122,6 @@ p.active {
   /* section  */
   .section {
     padding: 40px 0 0;
-  }
-
-  /* footer  */
-  .footer__inner {
-    flex-wrap: wrap;
-  }
-
-  .footer__text {
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-
-  .footer__socials-content {
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-
-  .footer__socials {
-    width: 25%;
-  }
-
-  .footer__title {
-    margin-top: 15px;
-    font-size: 13px;
   }
 } /* конец max-width: 768px */
 
@@ -1204,12 +1155,6 @@ p.active {
 
   .section__text {
     font-size: 13px;
-  }
-
-  /* footer  */
-  .footer__socials {
-    width: 45%;
-    padding-bottom: 7px;
   }
 
   .social__item {
@@ -1325,10 +1270,6 @@ p.active {
   .btn {
     font-size: 13px;
     padding: 4px 22px;
-  }
-
-  .footer__socials {
-    width: 30%;
   }
 
   .post img {
