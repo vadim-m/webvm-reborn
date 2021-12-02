@@ -436,7 +436,7 @@ a {
 }
 
 .about__item:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .about__item_big {
