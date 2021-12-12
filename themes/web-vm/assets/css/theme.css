@@ -228,7 +228,7 @@ a {
   width: 200px;
   cursor: pointer;
 
-  background-image: url("../images/logo/logoza.png");
+  background-image: url("../images/logo/logo.webp");
   background-size: 100% 100%;
 }
 
@@ -780,6 +780,7 @@ a {
   margin-right: 3px;
 }
 
+/* -------------------------------------------------------  */
 /* footer */
 .footer {
   background-color: var(--white-black);
@@ -838,6 +839,7 @@ a {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* OCTOBER CMS STYLES (костыли) */
 
+/* -------------------------------------------------------  */
 /* не показывать список постов на главной */
 #blog .post-list {
   display: none;
@@ -855,6 +857,7 @@ a {
   margin: 0;
 }
 
+/* -------------------------------------------------------  */
 /* пагинация на главной */
 .pagination {
   display: flex;
@@ -899,6 +902,7 @@ a {
   color: #fff;
 }
 
+/* -------------------------------------------------------  */
 /* оформление поиска */
 .form-inline {
   display: none;
@@ -948,8 +952,8 @@ a {
   display: inline-block;
 }
 
+/* -------------------------------------------------------  */
 /* оформление поста */
-
 hr {
   padding: 0;
   height: 0;
@@ -1006,11 +1010,6 @@ p.active {
   position: fixed;
   top: 50px;
   left: 0;
-
-  /*   width: 80%;
-  height: 80%;
-  
-  margin: 0 auto; */
 }
 
 .post iframe {
@@ -1018,6 +1017,7 @@ p.active {
   margin: 20px auto;
 }
 
+/* -------------------------------------------------------  */
 /* блок тэгов */
 .tag {
   margin-right: 5px;
@@ -1050,7 +1050,8 @@ p.active {
   color: #3700b3;
 }
 
-/* открытие каритнки на весь экран */
+/* -------------------------------------------------------  */
+/* открытие картинки на весь экран */
 .open-img {
   position: fixed;
   top: 0;
@@ -1084,15 +1085,8 @@ p.active {
   justify-content: flex-end;
 }
 
-/* @media  max-width: 1200px */
-@media (max-width: 1200px) {
-  .container {
-    width: 96%;
-  }
-}
-
+/* -------------------------------------------------------  */
 /* error page */
-
 .error {
   min-height: 450px;
 }
@@ -1101,38 +1095,33 @@ p.active {
   margin-top: 50px;
 }
 
-/* @media  max-width: 992px */
-@media (max-width: 992px) {
-  /* nav  */
-  .header__nav {
-    width: 28%;
-  }
-}
-
+/* -------------------------------------------------------  */
 /* @media  max-width: 768px */
 @media (max-width: 768px) {
-  /* header__menu  */
-  .header__menu {
-    display: block;
+  /* html */
+  html {
+    font-size: 0.875rem;
   }
 
+  /* header */
   .header__logo {
-    background-image: url("../images/logo/logo-min.webp");
+    height: 60px;
+    background-image: url(../images/logo/logo-mini.webp);
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  /* wrapper */
-  .wrapper {
-    padding-top: 0;
-  }
-
   /* section  */
   .section {
-    padding: 40px 0 0;
+    padding: 5rem 0 0;
+  }
+
+  .blog {
+    margin-bottom: 5rem 0 0;
   }
 } /* конец max-width: 768px */
 
+/* -------------------------------------------------------  */
 /* @media  max-width: 480px */
 @media (max-width: 480px) {
   /* body */
@@ -1144,6 +1133,11 @@ p.active {
   /* container  */
   .container {
     width: 95%;
+  }
+
+  /* header */
+  .header__logo {
+    height: 45px;
   }
 
   /* nav  */
@@ -1173,12 +1167,10 @@ p.active {
   /* copyright  */
   .copyright {
     font-size: 11px;
-
     padding: 6px 0;
   }
 
   /* OCTOBER CMS */
-
   .pagination {
     padding-top: 20px;
   }
@@ -1223,7 +1215,7 @@ p.active {
 } /* конец media 480px */
 
 /* Mobile Landscape. max-width: 920px выбрал опытным путем, это дисплеи ультра высокой четкости в альбомной ориентации типа новых андройдов и последних айфонов.
-   Эти правила после всех остальных, так как могут перебиться остальными!*/
+Эти правила после всех остальных, так как могут перебиться остальными!*/
 @media (max-width: 920px) and (orientation: landscape) {
   body {
     font-size: 14px;
@@ -1295,6 +1287,8 @@ p.active {
     max-width: 85%;
   }
 } /* конец max-width: 920px и lanscape */
+
+/* -------------------------------------------------------  */
 
 /* width */
 body::-webkit-scrollbar {
