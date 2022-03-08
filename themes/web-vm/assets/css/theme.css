@@ -123,17 +123,6 @@
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! */
-/* Константы цветов */
-
-:root {
-  --purple: #7443ff;
-  --turquoise: #3fbda3;
-  --text: #2a2d2e;
-  --wrapper-bg: #f0fafd;
-  --white-black: #fff;
-}
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* Обнуление стилей */
 
 html {
@@ -204,6 +193,25 @@ ul li {
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Цветовые схемы */
+
+.light-theme {
+  --purple: #7443ff;
+  --turquoise: #3fbda3;
+  --text: #2a2d2e;
+  --wrapper-bg: #f0fafd;
+  --white-black: #fff;
+}
+
+.dark-theme {
+  --purple: #ccc;
+  --turquoise: #ccc;
+  --text: #ccc;
+  --wrapper-bg: #ccc;
+  --white-black: #ccc;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* Вертска страницы  */
 
 /* wrapper  */
@@ -211,6 +219,7 @@ ul li {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--white-black);
 }
 
 /* constainer */
@@ -247,7 +256,7 @@ ul li {
 /* HEADER */
 .header {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white-black);
   margin-bottom: 2.5rem;
 }
 
