@@ -176,7 +176,7 @@ a {
 }
 
 /* wrapper  */
-.wrapper {
+.content {
   overflow: hidden;
   background-color: var(--wrapper-bg);
 }
