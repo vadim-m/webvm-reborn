@@ -1,3 +1,4 @@
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* FONTS */
 
 /* montserrat-300 - latin_cyrillic */
@@ -122,9 +123,8 @@
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! */
-/* ОСНОВНАЯ ВЕРСТКА СТРАНИЦЫ */
+/* Константы цветов */
 
-/* CONST */
 :root {
   --purple: #7443ff;
   --turquoise: #3fbda3;
@@ -133,22 +133,28 @@
   --white-black: #fff;
 }
 
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Обнуление стилей */
 
 html {
+  height: 100%;
+  box-sizing: border-box;
   font-size: 100%;
 }
 
 body {
+  height: 100%;
   font-family: "Montserrat";
   font-size: 1rem;
   color: var(--text);
   line-height: 1.67;
   margin: 0;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
 }
 
 h1,
@@ -164,16 +170,41 @@ p {
   margin: 0;
 }
 
-img {
+nav,
+menu,
+header,
+footer,
+aside,
+article,
+section,
+aside,
+figure,
+figcaption {
   display: block;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+img,
+picture {
   max-width: 100%;
-  height: auto;
 }
 
 a {
   text-decoration-color: var(--purple);
   color: var(--purple);
 }
+
+ul li {
+  list-style: none;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Вертска страницы  */
 
 /* wrapper  */
 .content {
