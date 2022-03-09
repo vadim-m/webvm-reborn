@@ -131,19 +131,28 @@ $(function () {
     document.body.style.overflow = "hidden";
   }
 
-  // смена цвеотовой схемы
+  // СМЕНА ЦВЕТОВОЙ СХЕМЫ
   const toggleThemeBtn = document.querySelector("#toggleThemeBtn");
 
-  function initialState(themeName) {
-    localStorage.setItem("theme", themeName);
+  function initialState() {
+    if (!localStorage.theme) {
+      localStorage.theme = "light-theme";
+    }
+    document.documentElement.className = localStorage.theme;
+  }
+
+  initialState();
+
+  function changeTheme(themeName) {
     document.documentElement.className = themeName;
+    localStorage.theme = themeName;
   }
 
   function toggleTheme() {
     if (localStorage.getItem("theme") == "dark-theme") {
-      initialState("light-theme");
+      changeTheme("light-theme");
     } else {
-      initialState("dark-theme");
+      changeTheme("dark-theme");
     }
   }
 
