@@ -196,21 +196,21 @@ ul li {
 /* Цветовые схемы */
 
 .light-theme {
-  --purple: #7443ff;
-  --turquoise: #3fbda3;
   --text: #2a2d2e;
   --text-second: #72787a;
   --wrapper-bg: #f0fafd;
   --white-black: #fff;
+  --purple: #7443ff;
+  --turquoise: #3fbda3;
 }
 
 .dark-theme {
-  --purple: #9c27b0;
-  --turquoise: #2decff9e;
   --text: #f0fafd;
   --text-second: #d3dbde;
   --wrapper-bg: #262a2b;
   --white-black: #303436;
+  --purple: #9c27b0;
+  --turquoise: #2decff9e;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -344,7 +344,7 @@ ul li {
   position: relative;
   font-size: 1.875rem;
   font-weight: 700;
-  color: var(--white-black);
+  color: #f0fafd;
   text-decoration: none;
   line-height: 1;
 
@@ -490,56 +490,32 @@ ul li {
 }
 
 .about__item:nth-child(1) {
-  background: linear-gradient(
-    135deg,
-    rgba(116, 67, 255, 1) 10%,
-    rgba(63, 189, 163, 1) 100%
-  );
+  background: linear-gradient(135deg, var(--purple) 10%, var(--turquoise) 100%);
 }
 
 .about__item:nth-child(2) {
-  background: linear-gradient(
-    180deg,
-    rgba(116, 67, 255, 1) 10%,
-    rgba(63, 189, 163, 1) 100%
-  );
+  background: linear-gradient(180deg, var(--purple) 10%, var(--turquoise) 100%);
 }
 
 .about__item:nth-child(3) {
-  background: linear-gradient(
-    225deg,
-    rgba(116, 67, 255, 1) 10%,
-    rgba(63, 189, 163, 1) 100%
-  );
+  background: linear-gradient(225deg, var(--purple) 10%, var(--turquoise) 100%);
 }
 
 .about__item:nth-child(1):hover .about__inner {
   transform: translate(20px, -20px);
-  background: linear-gradient(
-    90deg,
-    rgba(116, 67, 255, 1) 25%,
-    rgba(63, 189, 163, 1) 100%
-  );
+  background: linear-gradient(90deg, var(--purple) 25%, var(--turquoise) 100%);
   z-index: 2;
 }
 
 .about__item:nth-child(2):hover .about__inner {
   transform: translate(20px, -20px);
-  background: linear-gradient(
-    180deg,
-    rgba(116, 67, 255, 1) 10%,
-    rgba(63, 189, 163, 1) 100%
-  );
+  background: linear-gradient(180deg, var(--purple) 10%, var(--turquoise) 100%);
   z-index: 1;
 }
 
 .about__item:nth-child(3):hover .about__inner {
   transform: translate(20px, -20px);
-  background: linear-gradient(
-    225deg,
-    rgba(116, 67, 255, 1) 10%,
-    rgba(63, 189, 163, 1) 100%
-  );
+  background: linear-gradient(225deg, var(--purple) 10%, var(--turquoise) 100%);
 }
 
 .about__inner {
@@ -574,7 +550,7 @@ ul li {
   top: 70%;
   left: 50%;
   transform: translate(-50%, 0%);
-  color: var(--white-black);
+  color: #f0fafd;
 
   font-size: 1.5rem;
   font-weight: bold;
@@ -1339,6 +1315,6 @@ body::-webkit-scrollbar-track {
 
 /* ползунок */
 body::-webkit-scrollbar-thumb {
-  background-color: var(--turquoise);
+  background-color: var(--purple);
   height: 15px;
 }
