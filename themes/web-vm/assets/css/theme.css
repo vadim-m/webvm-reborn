@@ -210,7 +210,7 @@ ul li {
   --wrapper-bg: #262a2b;
   --white-black: #303436;
   --purple: #9c27b0;
-  --turquoise: #2decff9e;
+  --turquoise: #288a93;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -321,6 +321,9 @@ ul li {
   z-index: 10;
 
   background-color: rgba(42, 45, 46, 0.85);
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to left, var(--turquoise), var(--purple));
+  border-image-slice: 1;
 
   transition: all 0.5s cubic-bezier(1, -0.27, 0, 1.26);
 }
@@ -901,7 +904,7 @@ ul li {
   opacity: 0.8;
 
   padding: 0.25rem 1.5rem;
-  border: 1px solid black;
+  border: 1px solid var(--turquoise);
   border-radius: 8px;
   transition: 0.2s;
 }
@@ -1139,7 +1142,7 @@ p.active {
 
   /* blog */
   .blog {
-    margin-bottom: 5rem 0 0;
+    margin-bottom: 5rem;
   }
 
   .blog__header {
@@ -1209,6 +1212,10 @@ p.active {
     font-size: 13px;
   }
 
+  .blog {
+    margin: 0 0 30px;
+  }
+
   .social__item {
     flex-basis: 30px;
     font-size: 18px;
@@ -1221,10 +1228,6 @@ p.active {
   }
 
   /* OCTOBER CMS */
-  .pagination {
-    padding-top: 20px;
-  }
-
   .post h2 {
     margin-bottom: 5px;
     font-size: 16px;
