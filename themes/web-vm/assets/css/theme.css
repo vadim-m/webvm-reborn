@@ -386,6 +386,39 @@ ul li {
 }
 
 /* --------------------------------------------  */
+/* controls */
+.controls {
+  display: flex;
+  z-index: 15;
+  align-items: center;
+}
+
+.controls__search,
+.controls__switcher {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 24px;
+  color: #ccc;
+  margin-right: 35px;
+  padding-top: 4px;
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.controls__switcher:hover {
+  color: #fee13b;
+}
+
+.dark-theme .controls__switcher {
+  color: #fee13b;
+}
+
+/* --------------------------------------------  */
 /* Burger-menu */
 .burger-menu {
   width: 30px;
@@ -450,13 +483,11 @@ ul li {
 .burger-menu__item.active.burger-menu__item:after {
   top: 0;
   transform: rotate(45deg);
-  z-index: 15;
 }
 
 .burger-menu__item.active.burger-menu__item:before {
   top: 0;
   transform: rotate(-45deg);
-  z-index: 15;
 }
 
 /* --------------------------------------------  */
