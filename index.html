@@ -36,13 +36,12 @@
 
           <nav class="header__nav nav" id="nav">
             <a class="nav__link" href="/">Главная</a>
-            <a class="nav__link" href="#" data-scroll="#search">Поиск</a>
             <a class="nav__link" href="#" data-scroll="#works">Работы</a>
             <a class="nav__link" href="#" data-scroll="#about">Об авторе</a>
           </nav>
 
           <div class="header__controls controls">
-            <button class="controls__search">
+            <button class="controls__search" data-scroll="#search">
               <i class="fas fa-search"></i>
             </button>
             <button id="toggleThemeBtn" class="controls__switcher">
@@ -69,9 +68,9 @@
 
       <!-- САМ КОНТЕНТ СТРАНИЦЫ (список записей блога) -->
       <!-- BLOG -->
-      <section class="section" id='blog'>
+      <section class="section blog" id='blog'>
 
-        <div class="section_container container">
+        <div class="blog__container container">
 
           <!-- Форма поиска -->
           <form class="form-inline" method="GET" action="https://web-vm.site/search">
@@ -83,9 +82,11 @@
 
             <button class="btn btn btn-primary" type="submit">Search</button>
           </form>
+
           <!-- Начало отображения постов блога -->
           <div class="blog">
-            <!-- начало цикла отрисовки поста блога -->
+
+            <!-- начало цикла отрисовки 1 поста блога -->
             <article class="blog__item">
 
               <div class="blog__header">
@@ -94,7 +95,6 @@
                     src="https://images.wallpaperscraft.ru/image/single/harleydavidson_mototsikl_bajk_226052_1600x900.jpg"
                     alt="ОСНОВЫ HTTP #2" class="blog__img">
                 </a>
-
               </div>
 
               <div class="blog__title">
@@ -118,7 +118,8 @@
               </div>
 
             </article>
-            <!-- начало цикла отрисовки поста блога -->
+
+            <!-- начало цикла отрисовки 2 поста блога -->
             <article class="blog__item">
 
               <div class="blog__header">
@@ -150,7 +151,8 @@
               </div>
 
             </article>
-            <!-- начало цикла отрисовки поста блога -->
+
+            <!-- начало цикла отрисовки 3 поста блога -->
             <article class="blog__item">
 
               <div class="blog__header">
@@ -189,7 +191,8 @@
               </div>
 
             </article>
-            <!-- начало цикла отрисовки поста блога -->
+
+            <!-- начало цикла отрисовки 4 поста блога -->
             <article class="blog__item">
 
               <div class="blog__header">
@@ -227,7 +230,8 @@
               </div>
 
             </article>
-            <!-- начало цикла отрисовки поста блога -->
+
+            <!-- начало цикла отрисовки 5 поста блога -->
             <article class="blog__item">
 
               <div class="blog__header">
@@ -261,6 +265,7 @@
               </div>
 
             </article>
+
             <!-- конец цикла отрисовки поста блога -->
           </div>
 
@@ -482,15 +487,12 @@
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__inner">
-
           <div class="copyright">
             Автор <a href="https://github.com/vadim-m" target="_blank" class="copyright__link">Вадим Монаcтырский</a> ©
             2021 Web-vm.ru
           </div>
-
         </div>
       </div>
-      <!--container-->
     </footer>
 
   </div>
