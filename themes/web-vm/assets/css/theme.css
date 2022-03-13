@@ -725,17 +725,17 @@ ul li {
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: cover;
-  transition: 0.4s;
+  /* object-fit: cover; - убрал, чтоб не зернилась картинка */
+  transition: transform 0.2s linear;
 }
 
 .blog__img:hover,
 .blog__img:focus {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1);
 }
 
 .blog__link:focus .blog__img {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1);
 }
 
 .blog__title {
