@@ -413,6 +413,10 @@ ul li {
   cursor: pointer;
 }
 
+.controls__search.active {
+  color: var(--turquoise);
+}
+
 .controls__switcher:hover {
   color: #fee13b;
 }

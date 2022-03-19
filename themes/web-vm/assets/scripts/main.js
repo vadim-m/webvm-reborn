@@ -17,38 +17,18 @@ $(function () {
 
     // получаем значение атрибута (т.е '#id'), по которому кликнули
     const blockId = $(this).data("scroll");
+    // получаем значение отсутпа от верха страницы элемента с нужным айди
+    const blockOffset = $(blockId).offset().top;
 
-    // проверка! если значение search то прокрутка не нужна, только добавить класс форме
-    if (blockId == "#search") {
-      $(".form-inline").toggleClass("active");
-      // иначе находим отступ и прокручиваем
-    } else {
-      // получаем значение отсутпа от верха страницы элемента с нужным айди
-      const blockOffset = $(blockId).offset().top;
-
-      // реализация самого перехода к нужной секции при помощи jquerry - animate().
-      $("html, body").animate(
-        {
-          scrollTop: blockOffset - 35,
-        },
-        600
-      );
-    }
-
-    // меняем класс active у выбранного nav-link элемента и удаляем у соседних
-    $(event.currentTarget).addClass("active");
-    $(event.currentTarget).siblings().removeClass("active");
+    // реализация самого перехода к нужной секции при помощи jquerry - animate().
+    $("html, body").animate(
+      {
+        scrollTop: blockOffset - 35,
+      },
+      600
+    );
 
     // удаление классов active после нажатия нужного пункта навигации - для мобилок
-    $("#nav").toggleClass("active");
-    $("#burger-menu").toggleClass("active");
-  });
-
-  /* BURGER MENU */
-  // добавление/удаление классов active после нажатия на бургер меню
-  $("#burger-menu").on("click", function (event) {
-    event.preventDefault();
-
     $("#nav").toggleClass("active");
     $("#burger-menu").toggleClass("active");
   });
@@ -82,6 +62,7 @@ $(function () {
   });
 
   /* ОТКРЫТИЕ ИЗОБРАЖЕНИЙ НА ВЕСЬ ЭКРАН */
+  /* ОТКРЫТИЕ ИЗОБРАЖЕНИЙ НА ВЕСЬ ЭКРАН */
   // при клике по картинке, которая обернута в тег Р сначала убираем display:none с подложки,
   // добавляя активный класс ей, чтобы она открылась на весь экран.
   // Затем из события event берем src картинки, по которой был клик, и передаем
@@ -98,7 +79,7 @@ $(function () {
   });
 
   // слушатель на клик по кнопке Закрыть
-  $("#closeImgBtn").on("click", function () {
+  $("#closeImgBtn").on("click", function (event) {
     event.preventDefault();
     toggleClassImg();
     document.body.style.overflow = "visible";
@@ -131,8 +112,47 @@ $(function () {
     document.body.style.overflow = "hidden";
   }
 
-  // СМЕНА ЦВЕТОВОЙ СХЕМЫ
-  const toggleThemeBtn = document.querySelector("#toggleThemeBtn");
+  /* Кнопка поиска SEARCH */
+  /* Кнопка поиска SEARCH */
+  $("#search").on("click", function (event) {
+    event.preventDefault();
+
+    if ($("#nav").hasClass("active") && $(".form-inline").hasClass("active")) {
+      $("#nav").removeClass("active");
+      $(".form-inline").removeClass("active");
+      $("#burger-menu").removeClass("active");
+      $("#search").toggleClass("active");
+    } else if ($("#nav").hasClass("active")) {
+      $(".form-inline").toggleClass("active");
+      $("#search").toggleClass("active");
+    } else {
+      $(".form-inline").toggleClass("active");
+      $("#search").toggleClass("active");
+      $("#burger-menu").toggleClass("active");
+      $("#nav").toggleClass("active");
+    }
+  });
+
+  /* BURGER MENU */
+  /* BURGER MENU */
+  // добавление/удаление классов active после нажатия на бургер меню
+  $("#burger-menu").on("click", function (event) {
+    event.preventDefault();
+
+    if ($("#burger-menu").hasClass("active")) {
+      $("#nav").removeClass("active");
+      $("#burger-menu").removeClass("active");
+      $(".form-inline").removeClass("active");
+      $("#search").removeClass("active");
+    } else {
+      $("#burger-menu").addClass("active");
+      $("#nav").addClass("active");
+    }
+  });
+
+  /* СМЕНА ЦВЕТОВОЙ СХЕМЫ */
+  /* СМЕНА ЦВЕТОВОЙ СХЕМЫ */
+  const toggleThemeBtn = document.querySelector("#toggle-theme-btn");
 
   function initialState() {
     if (!localStorage.theme) {
