@@ -21,16 +21,21 @@ $(function () {
     const blockOffset = $(blockId).offset().top;
 
     // реализация самого перехода к нужной секции при помощи jquerry - animate().
-    $("html, body").animate(
-      {
-        scrollTop: blockOffset - 35,
-      },
-      600
-    );
+    $("html, body")
+      .delay(550)
+      .animate(
+        {
+          scrollTop: blockOffset - 35,
+        },
+        700
+      );
 
-    // удаление классов active после нажатия нужного пункта навигации - для мобилок
-    $("#nav").toggleClass("active");
-    $("#burger-menu").toggleClass("active");
+    // удаление классов active после нажатия нужного пункта навигации
+    $("#nav").removeClass("active");
+    $("#burger-menu").removeClass("active");
+    $("#search").removeClass("active");
+    $(".form-inline").removeClass("active");
+    $("body").removeClass("no-scroll");
   });
 
   // функция, которая проверяет величину скролла для выдачи класса (видимости) кнопке.
