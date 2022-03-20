@@ -953,24 +953,25 @@ body.no-scroll::-webkit-scrollbar-track {
   height: 100%;
 
   background-color: rgba(42, 45, 46, 0.85);
-  padding: 50px;
+  padding: 3rem;
 }
 
 .form-inline.active {
   left: 0;
 }
 
+/* поле input поиска */
 .form-control {
   display: inline-block;
   width: 100%;
   max-width: 50vw;
-  color: var(--text);
-  background-color: var(--white-black);
+  color: #2a2d2e;
+  margin-bottom: 3rem;
+  background-color: #fff;
   border: 5px solid var(--purple);
   text-decoration: none;
-  padding: 8px 24px;
-  font-size: 14px;
-  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
   font-weight: 700;
 
   outline: none;
@@ -978,17 +979,15 @@ body.no-scroll::-webkit-scrollbar-track {
   transition: all 0.2s linear;
 }
 
-.form-control:hover {
-  border: 5px solid var(--purple);
+.form-control:hover,
+.form-control:focus {
+  border: 5px solid var(--turquoise);
+  background-color: #ccf3ff;
 }
 
+/* не показывать выбор категории блока для поиска */
 .form-inline select {
   display: none;
-}
-
-.form-inline:after {
-  content: "FFgsg";
-  display: inline-block;
 }
 
 /* --- post, оформление отдельного поста блога --- */
