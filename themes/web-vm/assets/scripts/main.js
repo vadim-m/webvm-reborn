@@ -152,7 +152,7 @@ $(function () {
       $("#burger-menu").removeClass("active");
       $(".form-inline").removeClass("active");
       $("#search").removeClass("active");
-      $("body").toggleClass("no-scroll");
+      $("body").removeClass("no-scroll");
     } else {
       $("#burger-menu").addClass("active");
       $("#nav").addClass("active");
